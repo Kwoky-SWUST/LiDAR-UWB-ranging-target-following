@@ -1,0 +1,25 @@
+# multi uwb aoa anchor configuration
+uwb1_id:         1
+uwb2_id:         2
+uwb3_id:         3
+uwb4_id:         4
+
+uwb1_x_deviation:  -0.25
+uwb1_y_deviation:  0.15
+uwb1_a_deviation:  90
+
+uwb2_x_deviation:  0
+uwb2_y_deviation:  0
+uwb2_a_deviation:  0
+
+
+uwb3_x_deviation:  -0.25
+uwb3_y_deviation:  -0.15
+uwb3_a_deviation:  -90
+
+
+uwb4_x_deviation:  -0.5
+uwb4_y_deviation:  0
+uwb4_a_deviation:  180
+
+

@@ -1,0 +1,27 @@
+#this is the sample time
+dt: 0.5
+#robot moving limitations
+v_min: 0.0
+v_max: 0.4
+w_min: -0.6
+w_max: 0.6
+#trajectory predict time
+predict_time: 5
+#accleration
+a_vmax: 0.8
+a_wmax: 1.0
+#sampling
+v_sample: 0.09
+w_sample: 0.049
+#weight for each element alpha for heading beta for distance gamma for speed
+alpha: 0.5
+beta: 0.6
+gamma: 0.1                                                                      
+delta: 3.5
+#robot radius
+radius: 0.2
+#safety judge distance
+judge_distance: 10.0
+control_smooth_filter_size: 5
+
+tracking_uwb_id: 1

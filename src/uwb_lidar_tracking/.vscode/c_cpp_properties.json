@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/gglin/WORKSPACE/uwb_lidar_following_gglin/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/gglin/WORKSPACE/uwb_lidar_following_gglin/src/follow_control/include/**",
+        "/home/gglin/WORKSPACE/uwb_lidar_following_gglin/src/hokuyo_node/include/**",
+        "/home/gglin/WORKSPACE/uwb_lidar_following_gglin/src/simulation/include/**",
+        "/home/gglin/WORKSPACE/uwb_lidar_following_gglin/src/uwb_lidar_tracking/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

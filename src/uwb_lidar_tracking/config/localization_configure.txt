@@ -1,0 +1,32 @@
+#DBSCAN parameters
+dbscan_eps:				0.4
+dbscan_min:				4
+
+# trajectory and uwb ranging sequence length
+# in frames
+trajectory_length:			400
+
+# nearest neighbor data association parameter
+# in meters (adjust according to the target speed and the program frequency)
+nn_threshold:				0.4
+
+# how long we keep this object and its trajectory after it's been occluded
+# in seconds
+lost_time_threshold: 			5
+
+# to remove noise
+# in frames
+trajectory_length_threshold:		40
+
+# re-tracking parameters, how far this cluster from the uwb ranging can be recognised as the lost object 
+identical_distance_threshold:		0.5
+
+# once there is no object has a similarity higher than this, the object is lost
+similarity_threshold:			0.4
+
+# to down sample, by deleting farer laser point than this distance
+range_limitation:			15
+
+localization_mode:			1
+
+similarity_measure:			1

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+    - Base      : kobuki
+    - Stacks    : hexagons
+    - 3d Sensor : kinect
+-->    
+<robot name="turtlebot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find follow_simulation_description)/urdf/turtlebot_common_library.urdf.xacro" />
+  <xacro:include filename="$(find follow_simulation_description)/urdf/kobuki.urdf.xacro" />
+  <xacro:include filename="$(find follow_simulation_description)/urdf/stacks/hexagons.urdf.xacro"/>
+  <xacro:include filename="$(find follow_simulation_description)/urdf/sensors/hokuyo.urdf.xacro"/>
+  <xacro:include filename="$(find follow_simulation_description)/urdf/kobuki_move.urdf.xacro"/>
+  <xacro:include filename="$(find follow_simulation_description)/urdf/turtlebot_gazebo.urdf.xacro"/>
+  <xacro:include filename="$(find follow_simulation_description)/urdf/kobuki_gazebo.urdf.xacro"/>
+
+  <xacro:kobuki ns="robot4/"/>
+  <xacro:kobuki_sim ns="robot4/"/>
+  <xacro:stack_hexagons parent="robot4/base_link" ns="robot4/"/>
+  <xacro:sensor_hokuyo ns="robot4/"/>
+  <xacro:odom_vel ns="robot4/"/>
+  <xacro:turtlebot_sim_2dsensor ns="robot4/"/>
+</robot>

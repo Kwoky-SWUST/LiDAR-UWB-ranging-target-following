@@ -1,0 +1,23 @@
+<launch>
+  <arg name="world_file" default="/home/com/WORKSPACE/uwb_lidar_following_gglin/src/follow_simulation_description/world/25_2_19/Overview.world"/>
+
+	  <param name="robot_description" command="$(find xacro)/xacro '$(find follow_simulation_description)/robots/kobuki_hexagons_kinect.urdf.xacro'"/>
+	  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"></node>
+	  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+	    <param name="publish_frequency" type="double" value="30.0"/>
+	  </node>
+	  <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model turtlebot1 -param robot_description -y 0 -x 0.5"  /> 
+
+
+
+  <!--node pkg="rviz" type="rviz" name="rviz" args="-d $(find multi_robots_description)/config/1.rviz"/-->
+  <!--gazebo launch -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="debug" value="false"/>
+    <arg name="gui" value="true" />
+    <arg name="world_name" value="$(arg world_file)"/>
+  </include>
+
+  
+</launch>

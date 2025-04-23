@@ -1,0 +1,20 @@
+uwb1_id:1
+uwb1_origin_x: 0.0
+uwb1_origin_y: 0.25
+
+uwb2_id:2
+uwb2_origin_x: 0.0
+uwb2_origin_y: -0.25
+
+uwb3_id:3
+uwb3_origin_x: -0.70
+uwb3_origin_y: 0.25
+
+uwb4_id:4
+uwb4_origin_x: -0.70
+uwb4_origin_y: -0.25
+
+min_x: -10.0
+max_x: 10.0
+min_y: -10.0
+max_y: 10.0

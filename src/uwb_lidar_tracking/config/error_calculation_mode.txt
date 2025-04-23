@@ -1,0 +1,2 @@
+mode: 2
+target_uwb_id: 2
