@@ -57,27 +57,3 @@ This repository contains code for a project focused on target following using Li
 *   **Target Following Control:** Implements control algorithms to enable a robot or system to follow a designated target.
 *   **Simulation Environment:** Includes simulation capabilities for testing and development.
 *   **Modular Design:** The code is organized into separate modules for LiDAR processing, UWB data handling, control algorithms, and simulation.
-
-## Contribution Guidelines
-
-We welcome contributions to this project!  Please follow these guidelines:
-
-1.  **Fork the repository.**
-2.  **Create a new branch for your feature or bug fix.**
-3.  **Make your changes and commit them with clear, descriptive messages.**
-4.  **Test your changes thoroughly.**
-5.  **Submit a pull request.**
-
-Please ensure your code adheres to the existing coding style and includes appropriate documentation.
-
-## Troubleshooting
-
-*   **Compilation Errors:**  Check that all required dependencies are installed and that the ROS environment is properly sourced.  Examine the `CMakeLists.txt` files for dependency information.
-*   **Serial Port Issues:**  Verify that the serial port used for UWB communication is correctly configured and accessible.  Check permissions and baud rates.
-*   **Simulation Problems:**  Ensure that the simulation environment is properly set up and that all necessary models and configurations are loaded.
-*   **Target Tracking Instability:**  Tune the control parameters to optimize tracking performance.  Consider factors such as sensor noise and target dynamics.
-
-## Contributors
-
-*   Kwoky-SWUST
-```
